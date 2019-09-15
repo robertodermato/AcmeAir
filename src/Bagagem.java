@@ -1,13 +1,17 @@
 public abstract class Bagagem implements Comparable<Bagagem>{
     private int peso;
     private String descricao;
+    private static int contador; //observar que o parâmetro também ter que ser static
 
     public Bagagem(int peso, String descricao) {
         this.peso = peso;
         this.descricao = descricao;
+        contador++;
     }
 
     public int getPeso() {        return peso;    }
+
+    public static int getTotalBagagens(){return contador;}
 
     public void setPeso(int peso) {        this.peso = peso;    }
 
@@ -19,7 +23,7 @@ public abstract class Bagagem implements Comparable<Bagagem>{
 
     @Override
     public String toString() {
-        return "Peso" + peso + " Descrição: " + descricao;
+        return "Peso: " + peso + " - Descrição: " + descricao;
     }
 
     @Override

@@ -32,7 +32,15 @@ public class ListaDeBagagens {
         return custoTotal;
     }
 
-    public double getTotalBagagensDeMao(){
+    public int getTotalBagagensDeMao(){
+        int count = 0;
+        for (Bagagem bag: lista){
+            if (bag instanceof BagagemDeMao) count++;
+        }
+        return count;
+    }
+
+    public double getCustoTotalBagagensDeMao(){
         double custoTotalMao = 0;
         for (Bagagem bag: lista){
             if (bag instanceof BagagemDeMao) {custoTotalMao = custoTotalMao + bag.getCusto();}

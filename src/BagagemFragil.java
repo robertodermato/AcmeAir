@@ -18,6 +18,6 @@ public class BagagemFragil extends Bagagem {
 
     @Override
     public String toString() {
-        return "Bagagem Frágil - " + super.toString() + " Valor Seguro: " + valorSeguro;
+        return "Bagagem Frágil - " + super.toString() + " - Valor Seguro: " + valorSeguro;
     }
 }
