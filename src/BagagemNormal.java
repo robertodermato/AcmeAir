@@ -1,6 +1,6 @@
 public class BagagemNormal extends Bagagem{
 
-    public BagagemNormal(double peso, String descricao) {
+    public BagagemNormal(int peso, String descricao) {
         super(peso, descricao);
     }
 

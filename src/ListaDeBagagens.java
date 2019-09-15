@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class ListaDeBagagens {
 
@@ -45,6 +47,11 @@ public class ListaDeBagagens {
         }
         return handbags;
     }
+
+    // Verificar se era pra usar por comparable ou por comparator. Se peso era double. E se está na ordem certa.
+    public void ordenaPorPeso(){
+        Collections.sort(lista);
+            }
 
     @Override
     public String toString() {

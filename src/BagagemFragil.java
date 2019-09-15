@@ -2,7 +2,7 @@ public class BagagemFragil extends Bagagem {
 
     private double valorSeguro;
 
-    public BagagemFragil(double peso, String descricao, double valorSeguro) {
+    public BagagemFragil(int peso, String descricao, double valorSeguro) {
         super(peso, descricao);
         this.valorSeguro=valorSeguro;
     }
