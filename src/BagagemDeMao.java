@@ -19,6 +19,6 @@ public class BagagemDeMao extends Bagagem {
 
     @Override
     public String toString() {
-        return "Bagagem De Mão: " + super.toString();
+        return "Bagagem De Mão: " + super.toString() + " - Custo: R$ " + getCusto();
     }
 }

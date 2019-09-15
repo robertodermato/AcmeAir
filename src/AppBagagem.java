@@ -30,6 +30,8 @@ public class AppBagagem {
         lista.add(normal3);
         lista.add(normal4);
 
+        BagagemNormal.setCustoPorKilo(5);
+
         System.out.println(lista);
 
         System.out.println("Lista ordenada por peso:\n");

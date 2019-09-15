@@ -1,3 +1,5 @@
+// Bagagens frágeis possuem franquia de 20kg e o dobro do valor de kg excedente das bagagens normais.
+
 public class BagagemFragil extends Bagagem {
 
     private double valorSeguro;
@@ -13,11 +15,12 @@ public class BagagemFragil extends Bagagem {
 
     @Override
     public double getCusto() {
-        return 0;
+        if ((super.getPeso()-20)<=0) return 0;
+        return (super.getPeso()-20)*(BagagemNormal.getCustoPorKilo())*2;
     }
 
     @Override
     public String toString() {
-        return "Bagagem Frágil - " + super.toString() + " - Valor Seguro: " + valorSeguro;
+        return "Bagagem Frágil - " + super.toString() + " - Valor Seguro: " + valorSeguro + " - Custo: R$ " + getCusto();
     }
 }
