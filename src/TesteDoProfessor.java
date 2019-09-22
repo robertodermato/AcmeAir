@@ -38,11 +38,11 @@ public class TesteDoProfessor {
             if (b instanceof BagagemDeMao) {
                 BagagemDeMao bm = (BagagemDeMao) b;
                 System.out.println(b);
-                System.out.println("\tAutorizado por: "+bm.getAutorizacao());
+                System.out.println("\tAutorizado por: " + bm.getAutorizacao());
                 mao++;
             }
         }
-        System.out.println("Total de mão: "+ mao);
+        System.out.println("Total de mão: " + mao);
 
 
         Collections.sort(lista, new ComparadorCustoBagagem());
@@ -60,7 +60,7 @@ public class TesteDoProfessor {
 
         int total = 0;
         for (Bagagem b : lista) {
-            if ( b instanceof BagagemDeMao) {
+            if (b instanceof BagagemDeMao) {
                 // se eu precisasse usar métodos específicos de Bagagem de mão
                 // faria um "casting" e trabalharia com a variável bm
                 //BagagemDeMao bm = (BagagemDeMao) b;

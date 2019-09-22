@@ -10,6 +10,8 @@ public class BagagemDeMao extends Bagagem {
         super(peso, descricao);
     }
 
+    public String getAutorizacao(){return "Roberto";}
+
     @Override
     public double getCusto() {
         if (super.getPeso()<=5) return 0;
