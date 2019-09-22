@@ -2,6 +2,7 @@ public abstract class Bagagem implements Comparable<Bagagem>{
     private int peso;
     private String descricao;
     private static int contador; //observar que o parâmetro também ter que ser static
+    private static double custoExcesso;
 
     public Bagagem(int peso, String descricao) {
         this.peso = peso;
@@ -18,6 +19,11 @@ public abstract class Bagagem implements Comparable<Bagagem>{
     public String getDescricao() {        return descricao;    }
 
     public void setDescricao(String descricao) {        this.descricao = descricao;    }
+
+    public static double getCustoExcesso() {        return custoExcesso;    }
+
+    public static void setCustoExcesso(double custoExcesso) {        Bagagem.custoExcesso = custoExcesso;    }
+    // observar que aqui não se usa this
 
     public abstract double getCusto();
 

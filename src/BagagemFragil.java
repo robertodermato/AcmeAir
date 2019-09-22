@@ -16,7 +16,7 @@ public class BagagemFragil extends Bagagem {
     @Override
     public double getCusto() {
         if ((super.getPeso()-20)<=0) return 0;
-        return (super.getPeso()-20)*(BagagemNormal.getCustoPorKilo())*2;
+        return (super.getPeso()-20)*(Bagagem.getCustoExcesso())*2;
     }
 
     @Override

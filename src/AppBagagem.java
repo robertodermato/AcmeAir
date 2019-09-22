@@ -30,7 +30,7 @@ public class AppBagagem {
         lista.add(normal3);
         lista.add(normal4);
 
-        BagagemNormal.setCustoPorKilo(5);
+        Bagagem.setCustoExcesso(5);
 
         System.out.println(lista);
 
